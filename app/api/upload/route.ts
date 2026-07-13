@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export async function POST(request) {
+export async function POST(request: Request) {
   try {
     const arrayBuffer = await request.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
